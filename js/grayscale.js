@@ -33,11 +33,12 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Google Maps Scripts
+var myLatLng = new google.maps.LatLng(44.4613515, -93.1560905); // Sayles 44.461354, -93.156092
 var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(44.4603, -93.1561));
+    map.setCenter(myLatLng);
 });
 
 function init() {
@@ -48,7 +49,7 @@ function init() {
         zoom: 16,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(44.4603, -93.1561), // Carleton
+        center: myLatLng,
 
 
         // Disables the default Google Maps UI components
@@ -297,7 +298,6 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(44.4613515, -93.1560905); // Sayles 44.461354, -93.156092
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,

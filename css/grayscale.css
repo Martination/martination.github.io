@@ -273,11 +273,11 @@ a:focus {
   list-style: none; /* Hide normal bullets */
   margin-top: 0;
   margin-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 10px;
   font-size: 20px;
 }
 .bullet span {
-  margin-left: 30px;
+  margin-left: 20px;
   display: block;
   margin-bottom: 20px;
 }
