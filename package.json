@@ -13,6 +13,7 @@
   "devDependencies": {
     "css-loader": "^6.2.0",
     "favicons-webpack-plugin": "^5.0.2",
+    "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "sass": "^1.37.5",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.3",
-    "bootstrap": "^5.1.0"
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.5.0"
   }
 }
