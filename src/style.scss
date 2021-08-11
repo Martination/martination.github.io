@@ -1,0 +1,12 @@
+@import "bootstrap";
+
+$body-color: red;
+
+.hello {
+  // color: $secondary;
+}
+
+body {
+  color: $body-color;
+  background-color: blue;
+}
