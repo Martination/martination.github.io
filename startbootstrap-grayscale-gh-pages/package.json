@@ -5,7 +5,6 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js -e js,json,scss,html",
     "webpack": "webpack serve --open",
     "build": "webpack"
   },
@@ -13,11 +12,9 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^6.2.0",
-    "express": "^4.17.1",
-    "extract-loader": "^5.1.0",
+    "favicons-webpack-plugin": "^5.0.2",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
-    "nodemon": "^2.0.12",
     "sass": "^1.37.5",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
@@ -27,7 +24,6 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.3",
-    "bootstrap": "^5.1.0",
-    "lodash": "^4.17.21"
+    "bootstrap": "^5.1.0"
   }
 }

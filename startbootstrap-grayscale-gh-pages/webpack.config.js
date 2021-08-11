@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -11,11 +12,16 @@ module.exports = {
       template: 'src/index.html',
       inject: true,
     }),
+    new FaviconsWebpackPlugin({
+      logo: './src/globe.svg', // svg works too!
+      // mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
+      // devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
+    }),
   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'build'),
-    assetModuleFilename: 'images/[name]~[hash][ext][query]',
+    assetModuleFilename: 'assets/[name]~[hash][ext][query]',
     clean: true,
   },
   optimization: {
