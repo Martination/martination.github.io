@@ -1,16 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    // vendor: ['bootstrap'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'HTML Loading',
       template: 'src/index.html',
       inject: true,
     }),
@@ -18,17 +15,12 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'build'),
+    assetModuleFilename: 'images/[name]~[hash][ext][query]',
     clean: true,
   },
   optimization: {
     splitChunks: {
       chunks: "all",
-      // name: false,
-      // name: (module, chunks, cacheGroupKey) => {
-      //   const allChunksNames = chunks.map((chunk) => chunk.name).join('~');
-      //   const prefix = cacheGroupKey === 'defaultVendors' ? 'vendors' : cacheGroupKey;
-      //   return `${prefix}~${allChunksNames}`;
-      // },
       name(module, chunks, cacheGroupKey) {
         const moduleFileName = module
           .identifier()
