@@ -1,7 +1,5 @@
 import './style.scss';
 import { ScrollSpy } from 'bootstrap';
-// import 'bootstrap-icons';
-// import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import resume from './assets/MartinGreenResume.pdf';
 

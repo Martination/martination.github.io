@@ -70,35 +70,6 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|pdf|docx?|xlsx?|csv|pptx?)$/i,
         type: 'asset/resource',
       },
-      // {
-      //     test: /\.(pdf|docx?|xlsx?|csv|pptx?)(\?.*)?$/,
-      //     // include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
-      //     type: 'asset/source',
-      //     use: {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[name].[hash:8].[ext]',
-      //         outputPath: 'assets',
-      //         // publicPath: '../assets',
-      //       },
-      //     }
-      //   }
-      // {
-      //   test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/,
-      //   loader: "url?limit=10000&mimetype=application/font-woff",
-      // },
-      // {
-      //   test: /\.(pdf|docx?|xlsx?|csv|pptx?)(\?.*)?$/,
-      //   // include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
-      //   use: {
-      //     loader: 'file-loader',
-      //     options: {
-      //       name: '[name].[hash:8].[ext]',
-      //       outputPath: 'assets',
-      //       // publicPath: '../assets',
-      //     },
-      //   }
-      // }
     ],
   },
 };
