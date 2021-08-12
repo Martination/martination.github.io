@@ -20,15 +20,18 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-md navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-md-5">
-      <a class="navbar-brand" href="#page-top"><i class="fa fa-globe-americas"></i>
-        <span class="light"> Martination</span></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu <i class="fas fa-bars"></i>
+      <a class="navbar-brand" href="#page-top">
+        <i class="fa fa-globe-americas"></i>
+        <i class="glyphicon glyphicon-globe"></i>
+        <span> Martination</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!-- <i class="fas fa-bars"></i> -->
+        <!-- <i class="bi bi-list"></i> -->
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto text-end">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li> -->
@@ -56,7 +59,7 @@
             <i class="bi bi-chevron-double-down text-primary"></i>
           </a>
           <a class="btn btn-lg btn-primary bg-transparent" href="#about">
-            <i class="glyphicon glyphicon-arrow-down text-primary"></i>
+            <i class="glyphicon glyphicon-globe text-primary"></i>
           </a>
           <a class="btn btn-lg btn-primary bg-transparent" href="#about">
             <i class="glyphicon glyphicon-download text-primary"></i>
@@ -76,9 +79,9 @@
   </header>
   <!-- About -->
   <section class="about-section" id="about">
-    <div class="container text-white p-4">
-      <div class="row gx-4 gx-md-5 justify-content-center">
-        <div class="col-md-10">
+    <div class="container-fluid container-md text-white p-4">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
           <h2 class="text-white mb-4 text-center">About Me</h2>
           <p>I am a recent graduate of Carleton College in beautiful, rural Northfield, Minnesota - the city of Cows,
             Colleges, and Contentment (<a
@@ -90,12 +93,12 @@
             has instilled in me a sense of curiosity and intrigue in technology, science, and the broader world, in a
             How It's Made kind of way. If you get to know me, you will quickly learn that I like space and astronomy,
             security, live event setup, and renewable energy.</p>
-          <p>Now I work as an Audio Visual Technician at <a href="https://www.psav.com/">PSAV</a> in which I utilize my
-            aforementioned technical background to setup events large and small, work with clients on any pop-up
-            requests or problems, and assist third-party companies with their own setups. We strive for excellent
-            customer service while delivering a high-quality experience. I am regularly experimenting with our equipment
-            to better learn each device's nuances and abilities so that when the time comes, I will be ready to use it
-            at a moment's notice.</p>
+          <p>Now I work as an Audio Visual Technician at <a href="https://www.encoreglobal.com/">Encore Global</a> in
+            which I utilize my aforementioned technical background to setup events large and small, work with clients on
+            any pop-up requests or problems, and assist third-party companies with their own setups. We strive for
+            excellent customer service while delivering a high-quality experience. I am regularly experimenting with our
+            equipment to better learn each device's nuances and abilities so that when the time comes, I will be ready
+            to use it at a moment's notice.</p>
           <p>At Carleton, I worked as a Student Team Lead at <a href="https://www.carleton.edu/its/about/teams/peps/">
               PEPS</a> (Presentation, Events, and Production Support) under the Information Technology Services
             department where I helped to manage other student staff with schedules, assignments, and training, support
@@ -136,27 +139,11 @@
 
         </div>
       </div>
-      <img class="img-fluid" src="./img/ipad.png" alt="..." />
+
+      <!-- <img class="img-fluid" src="./img/ipad.png" alt="..." /> -->
     </div>
   </section>
   <!-- Projects -->
-  <!-- <section class="about-section text-center" id="projects">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8">
-          <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-          <p class="text-white-50">
-            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
-            simply download the template on
-            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-            The theme is open source, and you can use it for any purpose, personal or commercial.
-          </p>
-        </div>
-      </div>
-      <img class="img-fluid" src="./img/ipad.png" alt="..." />
-    </div>
-  </section> -->
-  <!-- Rrojects -->
   <section class="projects-section bg-light" id="projects">
     <div class="container px-4 px-lg-5">
       <!-- Featured Project Row-->
@@ -208,54 +195,39 @@
     </div>
   </section>
   <!-- Contact -->
-  <section class="signup-section" id="contact">
+  <section class="resume-section" id="contact">
     <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-          <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-            <!-- Email address input-->
-            <div class="row input-group-newsletter">
-              <div class="col"><input class="form-control" id="emailAddress" type="email"
-                  placeholder="Enter email address..." aria-label="Enter email address..."
-                  data-sb-validations="required,email" /></div>
-              <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify
-                  Me!</button></div>
-            </div>
-            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is
-              required.</div>
-            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.
-            </div>
-            <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3 mt-2 text-white">
-                <div class="fw-bolder">Form submission successful!</div>
-                To activate this form, sign up at
-                <br />
-                <a
-                  href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-              </div>
-            </div>
-            <!-- Submit error message-->
-            <!---->
-            <!-- This is what your users will see when there is-->
-            <!-- an error submitting the form-->
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
-            </div>
-          </form>
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center text-white">
+          <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
+          <h2 class="display-6">
+            <!-- <i class="bi bi-download"></i> -->
+            <i class="bi bi-file-arrow-down"></i>
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            <i class="bi bi-file-earmark-pdf"></i>
+            <i class="bi bi-file-pdf"></i>
+            <i class="bi bi-save"></i>
+            <i class="glyphicon glyphicon-file"></i>
+            <!-- <i class="glyphicon glyphicon-save"></i> -->
+            <!-- <i class="glyphicon glyphicon-download-alt"></i> -->
+            <!-- <i class="glyphicon glyphicon-download"></i> -->
+          </h2>
+          <h2 class="mb-2">Download Resume</h2>
+          <p>You already got most of it up above, but if you want something a little more concise, here it is.</p>
+          <a href="./assets/MartinGreenResume.pdf" class="btn btn-lg btn-primary mb-5" id="resumeDownload"
+            download="MartinGreenResume.pdf">Resume (PDF 70 KB)</a>
+          <p>If you want to call me, beep me (please don't do that), or reach me, you can email me at
+            <a class="text-white" href="#!">M.Green@alumni.carleton.edu</a> since I haven't yet set up my
+            carrier pigeon powered social media network.
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Contact -->
+  <!-- Social Media -->
   <section class="contact-section bg-black">
     <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5">
+      <!-- <div class="row gx-4 gx-lg-5">
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
@@ -270,9 +242,12 @@
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
+              <i class="bi bi-envelope-fill text-primary mb-2"></i>
+              <i class="glyphicon glyphicon-envelope text-primary mb-2"></i>
+              <h4 class="card-title m-0">Email</h4>
               <hr class="my-4 mx-auto" />
-              <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+              <div class="small text-black-50"><a
+                  href="mailto:M.Green@alumni.carleton.edu">M.Green@alumni.carleton.edu</a></div>
             </div>
           </div>
         </div>
@@ -287,16 +262,32 @@
           </div>
         </div>
       </div>
+      <div class="container text-white">
+        If you want to call me, beep me (please don't do that), or reach me, you can email me at
+        M.Green@alumni.carleton.edu, since I haven't yet set up my carrier pigeon powered social media network.
+      </div> -->
       <div class="social d-flex justify-content-center">
-        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+        <!-- <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a> -->
+        <!-- <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a> -->
+        <!-- <a class="mx-2" href="#!"><i class="fab fa-github"></i></a> -->
+        <a class="mx-2" target="_blank" rel="noreferrer noopener" href="https://www.github.com/Martination">
+          <i class="bi bi-github" title="Github" aria-label="Github"></i></a>
+        <a class="mx-2" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/MartinationGreen">
+          <i class="bi bi-facebook" title="Facebook" aria-label="Facebook"></i></a>
+        <a class="mx-2" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/martination/">
+          <i class="bi bi-linkedin" title="LinkedIn" aria-label="Linked In"></i></a>
       </div>
     </div>
   </section>
   <!-- Footer -->
   <footer class="footer bg-black small text-center text-white-50">
-    <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div>
+    <div class="container px-4 px-lg-5">
+      Copyright &copy; Martin Green 2021
+      <br>Adapted from the theme <a href="https://startbootstrap.com/theme/grayscale" target="_blank"
+        rel="noreferrer noopener">Grayscale</a>.
+    </div>
+
+    <a class="mx-2" href="https://www.linkedin.com/in/martination/" target="_blank" rel="noreferrer noopener"></a>
   </footer>
 </body>
 

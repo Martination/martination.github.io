@@ -1,12 +1,12 @@
 /*!
+* Modified From
 * Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
 
 $primary: #64a19d;
-$grayscale-font: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$hover: #7bafac;
+$navbar-light-color: $primary;
 
 $font: "Varela Round", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -15,17 +15,6 @@ $font: "Varela Round", system-ui, -apple-system, "Segoe UI", Roboto,
 @import "bootstrap";
 @import "glyphicons.scss";
 // @import "bootstrap-icons";
-
-// @font-face {
-//   font-family: 'Glyphicons Halflings';
-//   src: url('./fonts/glyphicons-halflings-regular.eot');
-//   src:
-//     url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-//     url('./fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-//     url('./fonts/glyphicons-halflings-regular.woff') format('woff'),
-//     url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-//     url('./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-// }
 
 html {
   scroll-padding-top: calc(4.5rem - 1px);
@@ -40,18 +29,20 @@ body {
   background-color: #fff;
 }
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  // font-size: 80%;
   padding: 0.75rem;
-  color: $primary;
+  // color: $primary;
   border: 1px solid $primary;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000;
-  font-weight: 700;
+  color: black;
+  // font-weight: 700;
   padding: 0.9rem 0;
+  font-family: $font;
+  font-size: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
@@ -124,6 +115,11 @@ body {
   background-size: cover;
 }
 
+.masthead .btn {
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+}
+
 .masthead h1 {
   font-family: $font;
   font-size: 2.5rem;
@@ -158,23 +154,11 @@ body {
   }
 }
 
-.btn {
-  // box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1rem 1.5rem;
-  // font-family: $font;
-  font-size: 2rem;
-  // text-transform: uppercase;
-  // letter-spacing: 0.15rem;
-  // border: 0;
-}
 
 .about-section {
-  // padding-top: 10rem;
-  // background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
   background-color: black;
 }
 .about-section p {
-  // margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   text-indent: 2rem;
 }
@@ -208,30 +192,12 @@ body {
 
 .bullet {
   list-style: none; /* Hide normal bullets */
-  // margin-top: 0;
-  // margin-bottom: 10px;
-  // margin-left: 10px;
-  // font-size: 20px;
 }
 .bullet span {
-  // margin-left: 1rem;
   display: block;
   margin-bottom: 1rem;
 }
 .bullet li:before {
-  // // display: inline-block;
-  // font-family: 'Glyphicons Halflings';
-  // // font-family: 'bootstrap-icons';
-  // font-style: normal;
-  // font-weight: normal;
-  // font-variant: normal;
-  // text-transform: none;
-  // line-height: 1;
-  // vertical-align: -.125em;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-
-
   position: relative;
   top: 1px;
   // display: inline-block;
@@ -243,58 +209,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  // content: "\f2c8";
   content: "\e254";
-
   margin-top: 0.5rem;
   margin-left: -2rem;
   float: left;
 
-
-  // /* Using a Bootstrap glyphicon as the bullet point */
-  // // content: "\e254";
-  // content: "\f2c8";
+  // Bootstrap <> icon
   // font-family: 'bootstrap-icons';
-  // // font-family: 'Glyphicons Halflings';
-  // /*font-size: 9px;*/
-  // float: left;
-  // margin-top: 2px;
-  // margin-left: -25px;
+  // content: "\f2c8";
+
 }
 
-// .glyphicon {
-//   position: relative;
-//   top: 1px;
-//   display: inline-block;
-//   font-family: 'Glyphicons Halflings';
-//   font-style: normal;
-//   font-weight: normal;
-//   line-height: 1;
-
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-// .glyphicon-arrow-down:before {
-//   content:"\e094";
-// }
-// .glyphicon-download:before {
-//   content:"\e026";
-// }
-// .glyphicon-chevron-down:before {
-//   content:"\e114";
-// }
-// .glyphicon-circle-arrow-down:before {
-//   content:"\e134";
-// }
-// .glyphicon-collapse-down:before {
-//   content:"\e159";
-// }
-// .glyphicon-menu-down:before {
-//   content:"\e259";
-// }
-
-.signup-section {
-  padding: 10rem 0;
+.resume-section {
+  padding: 5rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%),
               url("img/bg-signup.jpg");
   background-position: center;
@@ -302,19 +229,10 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
-.signup-section .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: $font;
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
+
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .contact-section .card {
   border: 0;
@@ -332,19 +250,22 @@ body {
   width: 3rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  // margin-top: 5rem;
 }
 .contact-section .social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffffff1a;
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  // color: #ffffff4d;
+  color: $primary;
+  padding-left: 1px;
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  // color: #ffffff80;
+  color: $hover;
 }
 .contact-section .social a:active {
   color: #fff;

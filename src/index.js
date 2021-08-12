@@ -3,6 +3,7 @@ import { ScrollSpy } from 'bootstrap';
 // import 'bootstrap-icons';
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+import resume from './assets/MartinGreenResume.pdf';
 
 // Can add javascript to this file to control the final file
 
@@ -19,7 +20,7 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 window.addEventListener('DOMContentLoaded', event => {
 
   // Navbar shrink function
-  var navbarShrink = function () {
+  function navbarShrink() {
     const navbarCollapsible = document.body.querySelector('#mainNav');
     if (!navbarCollapsible) {
       return;
@@ -43,7 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
   if (mainNav) {
     new ScrollSpy(document.body, {
       target: '#mainNav',
-      offset: 74,
+      offset: 72 + 150,
     });
   };
 
@@ -59,5 +60,9 @@ window.addEventListener('DOMContentLoaded', event => {
       }
     });
   });
+
+
+  const resumeDownload = document.getElementById('resumeDownload');
+  resumeDownload.href = resume;
 
 });

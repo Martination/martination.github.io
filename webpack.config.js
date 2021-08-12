@@ -67,22 +67,35 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|pdf|docx?|xlsx?|csv|pptx?)$/i,
         type: 'asset/resource',
       },
+      // {
+      //     test: /\.(pdf|docx?|xlsx?|csv|pptx?)(\?.*)?$/,
+      //     // include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
+      //     type: 'asset/source',
+      //     use: {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[hash:8].[ext]',
+      //         outputPath: 'assets',
+      //         // publicPath: '../assets',
+      //       },
+      //     }
+      //   }
       // {
       //   test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/,
       //   loader: "url?limit=10000&mimetype=application/font-woff",
       // },
       // {
-      //   test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      //   include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
+      //   test: /\.(pdf|docx?|xlsx?|csv|pptx?)(\?.*)?$/,
+      //   // include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
       //   use: {
       //     loader: 'file-loader',
       //     options: {
-      //       name: '[name].[ext]',
-      //       outputPath: 'webfonts',
-      //       publicPath: '../webfonts',
+      //       name: '[name].[hash:8].[ext]',
+      //       outputPath: 'assets',
+      //       // publicPath: '../assets',
       //     },
       //   }
       // }
