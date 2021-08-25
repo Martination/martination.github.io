@@ -18,7 +18,7 @@ $black-25: rgba(0, 0, 0, 0.25);
 $black-50: rgba(0, 0, 0, 0.50);
 $black-75: rgba(0, 0, 0, 0.75);
 
-$font: "Varela Round", system-ui, -apple-system, "Segoe UI", Roboto,
+$font: "Atkinson Hyperlegible", "Varela Round", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -115,7 +115,8 @@ body {
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, $black-25 0%, $black-75 75%, black 100%),
-              url("img/bg-masthead.jpg");
+              url("img/intro-bg.jpg");
+              // url("img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -180,9 +181,10 @@ body {
   font-size: 90%;
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
   .projects-section .featured-text {
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1.5rem;
+    margin: 0 0 0 1.5rem;
     border-left: 0.5rem solid $primary;
   }
   .projects-section .project-text {
@@ -228,7 +230,8 @@ body {
 .resume-section {
   padding: 5rem 0;
   background: linear-gradient(to bottom, $black-10 0%, $black-50 75%, black 100%),
-              url("img/bg-signup.jpg");
+              url("img/downloads-bg.jpg");
+              // url("img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
