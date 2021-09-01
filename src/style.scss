@@ -1,0 +1,306 @@
+/*!
+* Written by Martin Green
+* Modified from Start Bootstrap - Grayscale
+* Licensed under MIT
+*/
+
+/*!
+* Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+*/
+
+$primary: #64a19d;
+$hover: #7bafac;
+$active: #467370;
+$navbar-light-color: $primary;
+
+$white-10: rgba(255, 255, 255, 0.10);
+$white-50: rgba(255, 255, 255, 0.50);
+$white-75: rgba(255, 255, 255, 0.75);
+
+$black-10: rgba(0, 0, 0, 0.10);
+$black-25: rgba(0, 0, 0, 0.25);
+$black-50: rgba(0, 0, 0, 0.50);
+$black-75: rgba(0, 0, 0, 0.75);
+
+$scrollbar-track: #38383D;
+$scroolbar-thumb: #737373;
+$scroolbar-thumb-hover: #8f8f8f;
+$scroolbar-thumb-active: white;
+
+
+$font: "Atkinson Hyperlegible", "Varela Round", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@import "bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "glyphicons.scss";
+
+html {
+  scroll-padding-top: calc(4.5rem - 1px);
+  scrollbar-color: $scroolbar-thumb $scrollbar-track;
+  scrollbar-width: auto;
+}
+/* Width */
+::-webkit-scrollbar {
+  visibility: visible;  // must have some style to apply the colors
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: $scrollbar-track;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $scroolbar-thumb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $scroolbar-thumb-hover;
+}
+::-webkit-scrollbar-thumb:active {
+  background: $scroolbar-thumb-active;
+}
+
+body {
+  letter-spacing: 0.0625em;
+}
+
+h1, h2, h3, h4, h5, h6, .btn, footer {
+  font-family: $font;
+}
+
+#mainNav {
+  min-height: 3.5rem;
+  font-family: $font;
+  background-color: white;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  border: 1px solid $primary;
+}
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+#mainNav .navbar-brand {
+  color: black;
+  padding: 0.9rem 0;
+  font-size: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@include media-breakpoint-up(md) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: $white-50;
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: $white-50;
+  }
+  #mainNav .nav-link:hover {
+    color: $white-75;
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: white;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: black;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: black;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: $primary;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: $active;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: $primary;
+    outline: none;
+    border-bottom: 0.25rem solid $primary;
+  }
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, $black-25 0%, $black-75 75%, black 100%),
+              url("img/intro-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead .btn {
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+}
+
+.masthead h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.masthead h2 {
+  font-size: 1rem;
+}
+@include media-breakpoint-up(sm) {
+  .masthead h1, .masthead .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    font-size: 1.25rem;
+  }
+}
+
+
+.about-section {
+  background-color: black;
+}
+.about-section p {
+  padding-bottom: 1.5rem;
+  text-indent: 2rem;
+}
+
+
+.projects-section {
+  padding: 10rem 0;
+}
+.projects-section .featured-text {
+  padding: 2rem;
+}
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+.projects-section #verify-vax {
+  content: url("img/VerifyVax-Screenshot.png");
+}
+.projects-section #carmen {
+  content: url("img/Carmen-Screenshot.png");
+}
+.projects-section #comps {
+  content: url("img/Comps-Screenshot.png");
+}
+
+@include media-breakpoint-up(lg) {
+  .projects-section .featured-text {
+    padding: 0 0 0 1.5rem;
+    margin: 0 0 0 1.5rem;
+    border-left: 0.5rem solid $primary;
+  }
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: $primary;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+.bullet {
+  list-style: none; /* Hide normal bullets */
+}
+.bullet span {
+  display: block;
+  margin-bottom: 1rem;
+}
+.bullet li:before {
+  position: relative;
+  top: 1px;
+  // display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e254";
+  margin-top: 0.5rem;
+  margin-left: -2rem;
+  float: left;
+
+  // Bootstrap <> icon
+  // font-family: 'bootstrap-icons';
+  // content: "\f2c8";
+
+}
+
+.resume-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, $black-10 0%, $black-50 75%, black 100%),
+              url("img/downloads-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+.contact-section {
+  padding-top: 2rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: $white-10;
+  border-radius: 100%;
+  line-height: 3rem;
+  color: $primary;
+  padding-left: 1px;
+}
+.contact-section .social a:hover {
+  color: $hover;
+}
+.contact-section .social a:active {
+  color: white;
+}
+
+.footer {
+  padding: 5rem 0;
+}
