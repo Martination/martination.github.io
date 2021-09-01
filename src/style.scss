@@ -61,12 +61,13 @@ body {
   letter-spacing: 0.0625em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .btn, footer {
   font-family: $font;
 }
 
 #mainNav {
   min-height: 3.5rem;
+  font-family: $font;
   background-color: white;
 }
 #mainNav .navbar-toggler {
@@ -80,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   // font-weight: 700;
   padding: 0.9rem 0;
-  font-family: $font;
+  // font-family: $font;
   font-size: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item:hover {
