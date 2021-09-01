@@ -1,19 +1,7 @@
 import './style.scss';
 import { ScrollSpy } from 'bootstrap';
-// import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import resume from './assets/MartinGreenResume.pdf';
 
-// Can add javascript to this file to control the final file
-
-
-/*!
-* Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -24,12 +12,12 @@ window.addEventListener('DOMContentLoaded', event => {
       return;
     }
     if (window.scrollY === 0) {
-      navbarCollapsible.classList.remove('navbar-shrink')
+      navbarCollapsible.classList.remove('navbar-shrink');
     } else {
-      navbarCollapsible.classList.add('navbar-shrink')
+      navbarCollapsible.classList.add('navbar-shrink');
     }
 
-  };
+  }
 
   // Shrink the navbar
   navbarShrink();

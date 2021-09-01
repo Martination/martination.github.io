@@ -14,7 +14,7 @@ module.exports = {
       inject: true,
     }),
     new FaviconsWebpackPlugin({
-      logo: './src/globe.svg', // svg works too!
+      logo: './src/globe.svg',
       // mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
       // devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
     }),
@@ -53,16 +53,13 @@ module.exports = {
         options: {
         },
       },
-      // {
-      //   test: /\.css$/i,
-      //   use: ['style-loader', 'css-loader'],
-      // },
       {
         test: /\.(css|s[ac]ss)$/i,
         use: [
           // Creates `style` nodes from JS strings
           // "style-loader",
-          MiniCssExtractPlugin.loader,  // better for production over style-loader
+          // Better for production over style-loader
+          MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS

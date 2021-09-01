@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Portfolio website for Martin Green",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "predeploy": "webpack --mode=production",
     "deploy": "gh-pages -d build"
   },
-  "author": "",
+  "author": "Martin",
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^6.2.0",
