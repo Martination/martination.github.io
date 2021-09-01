@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: 'development',
@@ -17,6 +18,7 @@ module.exports = {
       // mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
       // devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
     }),
+    new MiniCssExtractPlugin(),
   ],
   output: {
     filename: '[name].bundle.js',
@@ -59,7 +61,8 @@ module.exports = {
         test: /\.(css|s[ac]ss)$/i,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          // "style-loader",
+          MiniCssExtractPlugin.loader,  // better for production over style-loader
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
