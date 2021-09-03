@@ -1,3 +1,9 @@
+/*!
+* Written by Martin Green
+* Modified from Start Bootstrap - Grayscale
+* Licensed under MIT
+*/
+
 import './style.scss';
 import { ScrollSpy } from 'bootstrap';
 import resume from './assets/MartinGreenResume.pdf';
