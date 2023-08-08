@@ -7,6 +7,7 @@
 import './style.scss';
 import { ScrollSpy } from 'bootstrap';
 import resume from './assets/MartinGreenResume.pdf';
+import windfarm from './img/windfarm.png';
 
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -56,5 +57,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
   const resumeDownload = document.getElementById('resumeDownload');
   resumeDownload.href = resume;
+
+  const windfarmImg = document.getElementById('windfarmImg');
+  windfarmImg.href = windfarm;
 
 });
