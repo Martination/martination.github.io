@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -11,12 +10,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
+      favicon: 'src/globe.svg',
       inject: true,
-    }),
-    new FaviconsWebpackPlugin({
-      logo: './src/globe.svg',
-      // mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
-      // devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
     }),
     new MiniCssExtractPlugin(),
   ],
